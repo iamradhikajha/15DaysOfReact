@@ -72,6 +72,6 @@ It allows React to control and validate user input.
 Use of e.preventDefault()
 
 
-### I make a practice to learn form gandling in react...
+### I make a practice to learn form handling in react...and also made 2 mini project in my day1
 
 
