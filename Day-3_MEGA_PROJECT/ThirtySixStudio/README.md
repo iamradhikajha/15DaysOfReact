@@ -1,16 +1,60 @@
-# React + Vite
+# 🚀 Day 3 — GSAP + Interactive Canvas Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This day was focused on learning **GSAP (GreenSock Animation Platform)** and using it to build a **high-performance interactive website** with **React, Canvas, and Locomotive Scroll**.
 
-Currently, two official plugins are available:
+The goal was to understand how modern animation systems work in real production websites and how they integrate with React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 What I Learned
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1️⃣ GSAP Fundamentals
+- `gsap.to()`
+- `gsap.from()`
+- `gsap.set()`
+- Easing (`power2`, `linear`, `expo`, etc.)
+- Infinite animations using `repeat: -1`
+- `onUpdate()` for frame-based animations
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2️⃣ React + GSAP Integration
+- Why **GSAP should never animate React state**
+- How to use `useRef()` as an animation object
+- How to sync GSAP values into React state safely
+- Why **React 18 Strict Mode** breaks impure code
+
+---
+
+### 3️⃣ Canvas Frame Animation
+- Rendering image sequences on `<canvas>`
+- Using `requestAnimationFrame` style loops via GSAP
+- Handling device pixel ratio (`window.devicePixelRatio`)
+- Preventing blurry canvas images
+
+---
+
+### 4️⃣ Scroll-Based Motion (Locomotive Scroll)
+- Smooth scrolling
+- Scroll-based parallax via `data-scroll-speed`
+- Integrating Locomotive Scroll with Canvas layers
+
+---
+
+### 5️⃣ React Performance & Rules
+- Why `Math.random()` is forbidden in JSX
+- Why refs cannot be read during render
+- Why GSAP must never mutate React state
+- How React 18 renders components multiple times
+
+---
+
+## 🧩 Project Overview
+
+I built a **ThirtySix Studios inspired interactive website** that includes:
+
+- Full-screen canvas-based image animations
+- Scroll-driven parallax motion
+- Click-triggered color & canvas reveal animation
+- Smooth scrolling with Locomotive Scroll
+- GSAP powered timeline animations
