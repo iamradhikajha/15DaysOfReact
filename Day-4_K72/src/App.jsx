@@ -5,11 +5,12 @@ import Projects from "./pages/Projects";
 import Agence from "./pages/Agence";
 const App = () => {
   return (
-    <div>
+    <div >
+      
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
         <Route path="/agence" element={<Agence />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );
