@@ -5,7 +5,11 @@ import Projects from "./pages/Projects";
 import Agence from "./pages/Agence";
 const App = () => {
   return (
-    <div >
+    <div className="text-white">
+      <div className="h-screen fixed z-10">
+        <div className="h-full w-1/5 bg-black"></div>
+      </div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agence" element={<Agence />} />
